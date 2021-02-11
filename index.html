@@ -1518,11 +1518,11 @@
         L.control.layers(debase, communes,{collapsed:false}).addTo(map);
         L.control.layers(gouvernancetitre, gouvernance).addTo(map);
         L.control.layers(mvttitre, mvt).addTo(map);
-        L.control.layers(avalanchetitre, avalanches).addTo(map);
-        L.control.layers(inondationtitre, inondation).addTo(map);
-        L.control.layers(feutitre,feu).addTo(map);
-        L.control.layers(climattitre,climat).addTo(map);
         L.control.layers(seismetitre, seisme).addTo(map);
+        L.control.layers(inondationtitre, inondation).addTo(map);
+        L.control.layers(climattitre,climat).addTo(map);
+        L.control.layers(avalanchetitre, avalanches).addTo(map);
+        L.control.layers(feutitre,feu).addTo(map);
         map.on("zoomend", function(){
 
                 if (map.hasLayer(layer_Dpartements_27)) {
@@ -1611,7 +1611,7 @@
                 abstract.show = function () {
                     this._div.classList.remove("abstract");
                     this._div.classList.add("abstractUncollapsed");
-                    this._div.innerHTML = '<p><b>Bienvenue sur la carte interactive des risques naturels du PARN</b></p><p>Vous trouverez sur la droite de votre page des l&eacute;gendes d&eacute;roulantes class&eacute;es par type de risque ainsi qu&acute;un panneau traitant des plans de gouvernance :</p><p>- Gouvernance<br />- Mouvements de terrain<br />- Avalanches<br />- Inondations<br />- Incendies<br />- Climatiques <br />- S&eacute;ismes</p><p></p><p><b>Base de donn&eacute;es GASPAR (DICRIM, PCS, CATNAT, PPRN, DDRM) :</b></p> <p><a href="https://www.georisques.gouv.fr" target="_blank">Georisques</a> &middot;</p><p><b>SISFRANCE :</b></p><p><a href="https://sisfrance.irsn.fr/" target="_blank">https://sisfrance.irsn.fr/</a> &middot;</p><p><b>CLPA :</b></p><p><a href="https://www.avalanches.fr/clpa-presentation"target="_blank">https://www.avalanches.fr/clpa-presentation</a> &middot;</p><p><b>BDIFF :</b></p><p><a href="https://bdiff.agriculture.gouv.fr"target="_blank">https://bdiff.agriculture.gouv.fr</a> &middot;</p><b><p>Remont&eacute;e de nappes, BDMVT :</b></p><p><a href="https://www.brgm.fr/fr"target="_blank">https://www.brgm.fr/fr</a> &middot;</p><p><b>Donn&eacute;es administratives :</b></p><p><a href="https://www.insee.fr/fr/accueil" target="_blank">https://www.insee.fr/fr/accueil</a> &middot; </p><p><b>Notre master :</b></p><p><a href="http://formations.univ-grenoble-alpes.fr/fr/catalogue/master-XB/sciences-humaines-et-sociales-SHS/master-geographie-amenagement-environnement-developpement-program-master-geographie-amenagement-environnement-developpement/parcours-geographie-information-interface-durabilite-environnements-geoides-subprogram-parcours-geoides-geographie-espaces-homme-environnement.html" target="_blank">GEOIDES</a> &middot';
+                    this._div.innerHTML = '<p><b>Bienvenue sur la carte interactive des risques naturels du PARN</b></p><p>Vous trouverez sur la droite de votre page des l&eacute;gendes d&eacute;roulantes class&eacute;es par type de risque ainsi qu&acute;un panneau traitant des plans de gouvernance :</p><p>- Gouvernance<br />- Mouvements de terrain<br />- S&eacute;ismes<br />- Inondations<br />- Climatiques <br />- Avalanches<br />- Incendies<br /></p><p></p><p><b>Base de donn&eacute;es GASPAR (DICRIM, PCS, CATNAT, PPRN, DDRM) :</b></p> <p><a href="https://www.georisques.gouv.fr" target="_blank">Georisques</a> &middot;</p><p><b>SISFRANCE :</b></p><p><a href="https://sisfrance.irsn.fr/" target="_blank">https://sisfrance.irsn.fr/</a> &middot;</p><p><b>CLPA :</b></p><p><a href="https://www.avalanches.fr/clpa-presentation"target="_blank">https://www.avalanches.fr/clpa-presentation</a> &middot;</p><p><b>BDIFF :</b></p><p><a href="https://bdiff.agriculture.gouv.fr"target="_blank">https://bdiff.agriculture.gouv.fr</a> &middot;</p><b><p>Remont&eacute;e de nappes, BDMVT :</b></p><p><a href="https://www.brgm.fr/fr"target="_blank">https://www.brgm.fr/fr</a> &middot;</p><p><b>Donn&eacute;es administratives :</b></p><p><a href="https://www.insee.fr/fr/accueil" target="_blank">https://www.insee.fr/fr/accueil</a> &middot; </p><p><b>Notre master :</b></p><p><a href="http://formations.univ-grenoble-alpes.fr/fr/catalogue/master-XB/sciences-humaines-et-sociales-SHS/master-geographie-amenagement-environnement-developpement-program-master-geographie-amenagement-environnement-developpement/parcours-geographie-information-interface-durabilite-environnements-geoides-subprogram-parcours-geoides-geographie-espaces-homme-environnement.html" target="_blank">GEOIDES</a> &middot';
             };
             abstract.addTo(map);
         </script>
