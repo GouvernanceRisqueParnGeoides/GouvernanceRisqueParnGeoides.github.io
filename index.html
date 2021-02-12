@@ -78,7 +78,9 @@
         var map = L.map('map', {
             zoomControl:true, maxZoom:28, minZoom:1,
             layers:[autre]
-        })
+        });
+        bar = L.control.scale({position: 'bottomright',imperial:false});
+        bar.addTo(map);
         var hash = new L.Hash(map);
         map.attributionControl.setPrefix('<a href="https://github.com/tomchadwin/qgis2web" target="_blank">qgis2web</a> &middot; <a href="https://leafletjs.com" title="A JS library for interactive maps">Leaflet</a> &middot; <a href="https://qgis.org">QGIS</a>');
         var autolinker = new Autolinker({truncate: {length: 30, location: 'smart'}});
